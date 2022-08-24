@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// import Mesita4 from './mesita-clase4/CreandoUnaApp';
+// import Mesita5 from './mesita-clase5/MesaClase5';
+// import Mesita6 from './mesita-clase6/MesaClase6';
+// import Mesita7 from './mesita-clase7/MesaClase7';
+// import Mesita8 from './mesita-clase8/MesaClase8';
+// import Mesita9 from './mesita-clase9/components/MesaClase9';
+import Mesita10 from './mesita-clase10/MesaClase10';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Mesita4/> */}
+      {/* <Mesita5/> */}
+      {/* <Mesita6/> */}
+      {/* <Mesita7/> */}
+      {/* <Mesita8/> */}
+      {/* <Mesita9/> */}
+      <Mesita10/>
+    </>
   );
 }
 

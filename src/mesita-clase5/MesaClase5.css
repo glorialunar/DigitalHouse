@@ -1,0 +1,16 @@
+.app{
+    background-color:rgb(245, 189, 217);
+    padding: 5px 15px;
+}
+
+h1{
+text-align: center;
+font-size: 30px;
+margin-top: 0;
+}
+
+.app img{
+width: 200px;
+height: 200px;
+border-radius: 5%;
+}

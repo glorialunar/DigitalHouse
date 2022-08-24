@@ -1,0 +1,14 @@
+.contenedor{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.saludo{
+    color: blue;
+}
+
+.saludo:nth-child(2n){
+    color: red;
+}
+

@@ -1,0 +1,9 @@
+.title {
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.satisfied{
+height: 50vmin;
+pointer-events: none;
+}
