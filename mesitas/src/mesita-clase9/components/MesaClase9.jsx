@@ -67,11 +67,11 @@ export default class Mesita9 extends Component {
 
         return (
         <div style={{display:"flex"}}>
-        <div className="container">
-            <img id="pokemonImg" src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${this.getPokemon()}.png`} alt={this.state.pokemon[0]} />
-            <p id="name">{`${this.state.pokemon[0]} is a pokemon type ${this.getTypes()}`}</p>
-        </div>
-        <Pokedex updateParent={this.update} pokemons={this.state.pokemons} />
+            <div className="container">
+                <img id="pokemonImg" src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${this.getPokemon()}.png`} alt={this.state.pokemon[0]} />
+                <p id="name">{`${this.state.pokemon[0]} is a pokemon type ${this.getTypes()}`}</p>
+            </div>
+            <Pokedex updateParent={this.update} pokemons={this.state.pokemons} />
         </div>
         )
     }
