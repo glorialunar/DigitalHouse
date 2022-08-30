@@ -5,7 +5,8 @@
 // import Mesita8 from './mesita-clase8/MesaClase8';
 // import Mesita9 from './mesita-clase9/components/MesaClase9';
 // import Mesita10 from './mesita-clase10/MesaClase10';
-import Mesita11 from './mesita-clase11/Rejuvenecedor';
+// import Mesita11 from './mesita-clase11/Rejuvenecedor';
+import Mesita15 from './mesita-clase15/MesaClase15';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <Mesita8/> */}
       {/* <Mesita9/> */}
       {/* <Mesita10/> */}
-      <Mesita11/>
+      {/* <Mesita11/> */}
+      <Mesita15/>
     </>
   );
 }

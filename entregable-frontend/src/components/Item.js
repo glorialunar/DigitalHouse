@@ -27,8 +27,8 @@ export default function Item({item, totalBuy, setTotalBuy}) {
         <h5>En stock: <span>{stock > 0 ? stock : "Agotado"}</span></h5>
 
         <button
-            disabled={stock <= 0 && true}
             onClick={(addToCart)}
+            disabled={stock <= 0 && true}
             >
             {stock > 0 ? "COMPRAR" : "Sin Stock"}
         </button>
