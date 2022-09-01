@@ -1,0 +1,25 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+img{
+    width: 40vw;
+}
+
+button{
+    margin-top: 1.5rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color:lightcoral;
+}
