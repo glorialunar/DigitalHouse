@@ -6,6 +6,7 @@ import Vlog from './Vlog';
 import Faq from './Faq';
 import Home from './Home';
 import Main from './Main';
+import NotFound from './NotFound';
 
 function Clase17() {
     return (
@@ -16,6 +17,7 @@ function Clase17() {
                     <li><Link to="/main">Main</Link></li>
                     <li><Link to="/about" >About Me</Link></li>
                     <li><Link to="/faq">FAQ</Link></li>
+                    <li><Link to="/blokenlink">Enlace roto</Link></li>
                 </ul>
             </div>
             <Routes>
@@ -26,6 +28,7 @@ function Clase17() {
                 </Route> 
                 <Route path='/about' element={<About/>}/>
                 <Route path='/faq' element={<Faq/>}/>
+                <Route path='*' element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>
 
