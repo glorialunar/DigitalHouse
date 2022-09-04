@@ -21,8 +21,8 @@ function Clase17() {
             <Routes>
                 <Route exact path='/' element={<Home/>}/>
                 <Route path='/main' element={<Main/>}>
-                    <Route path='blog' element={<Blog/>}/>   
-                    <Route path='vlog' element={<Vlog/>}/>   
+                    <Route path='/main/blog/:id/:resourceId' element={<Blog/>}/>   
+                    <Route path='/main/vlog/:id/:resourceId' element={<Vlog/>}/>   
                 </Route> 
                 <Route path='/about' element={<About/>}/>
                 <Route path='/faq' element={<Faq/>}/>
