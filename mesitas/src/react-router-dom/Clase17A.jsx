@@ -1,0 +1,35 @@
+import React from 'react';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import About from './About';
+import Blog from './Blog';
+import Vlog from './Vlog';
+import Faq from './Faq';
+import Home from './Home';
+import Main from './Main';
+
+function Clase17() {
+    return (
+        <BrowserRouter>
+            <div>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/main">Main</Link></li>
+                    <li><Link to="/about" >About Me</Link></li>
+                    <li><Link to="/faq">FAQ</Link></li>
+                </ul>
+            </div>
+            <Routes>
+                <Route exact path='/' element={<Home/>}/>
+                <Route path='/main' element={<Main/>}>
+                    <Route path='blog' element={<Blog/>}/>   
+                    <Route path='vlog' element={<Vlog/>}/>   
+                </Route> 
+                <Route path='/about' element={<About/>}/>
+                <Route path='/faq' element={<Faq/>}/>
+            </Routes>
+        </BrowserRouter>
+
+    );
+}
+
+export default Clase17;
