@@ -6,7 +6,7 @@ export default class Mesita8 extends Component {
     constructor(props){
         super(props);
         this.state = {
-        colors : ["RED", "BLUE", "YELLOW", "GREEN", "ORANGE", "MAGENTA", "BROWN", "LIME"]
+            colors : ["RED", "BLUE", "YELLOW", "GREEN", "ORANGE", "MAGENTA", "BROWN", "LIME"]
         }
 
         this.shuffleColors=this.shuffleColors.bind(this);

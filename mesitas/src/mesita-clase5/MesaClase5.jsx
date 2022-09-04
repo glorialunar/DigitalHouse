@@ -53,8 +53,8 @@ let arrayPerritos = [
 export default function MesaClase5() {
     return (
         <section className='app'>
-        <h1>Clientes caninos de Veterinaria</h1>
-        <Perritos listado={arrayPerritos}/>
+            <h1>Clientes caninos de Veterinaria</h1>
+            <Perritos listado={arrayPerritos}/>
         </section>
     );
 }
