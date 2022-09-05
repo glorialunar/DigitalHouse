@@ -17,6 +17,16 @@ function Main() {
                         Recurso dos del articulo uno para blog
                     </Link>
                 </li>
+                <li>
+                    <Link to={"/main/blog/brokenlink"}>
+                        Link roto a blog con un solo parametro
+                    </Link>
+                </li>
+                <li>
+                    <Link to={"/main/blog/bro-ken-link"}>
+                        Link roto a blog con mas de dos parametros
+                    </Link>
+                </li>
             </ul>
 
             <h2>Vlog</h2>
@@ -31,10 +41,18 @@ function Main() {
                         Recurso dos del articulo uno para vlog
                     </Link>
                 </li>
+                <li>
+                    <Link to={"/main/blog/brokenlink"}>
+                        Link roto a blog con un solo parametro
+                    </Link>
+                </li>
+                <li >
+                    <Link to={"/main/blog/bro-ken-link"}>
+                        Link roto a blog con mas de dos parametros
+                    </Link>
+                </li>
             </ul>
 
-
-            
             <Outlet/>
         </div>
     );
