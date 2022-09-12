@@ -33,4 +33,14 @@ const PokemonsContainer = styles.div`
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
+
+    a{
+        padding: 0.5rem;
+    }
+
+    a:hover{
+        font-size: 1.2rem;
+        background: #FEF5AC;
+        color: #97D2EC;
+    }
 `

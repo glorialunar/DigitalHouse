@@ -3,8 +3,9 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Pokemon from "./components/Pokemon";
 import Pokemons from "./components/Pokemons";
-import PokeTypes from "./components/PokeTypes";
 import styles from "styled-components";
+import Types from "./components/Types";
+import PokeType from "./components/PokeType";
 
 function Clase17() {
     return (
@@ -17,7 +18,9 @@ function Clase17() {
                             <Route path="/pokemons" element={<Pokemons/>}>
                                 <Route path=":pokeName" element={<Pokemon/>}/>
                             </Route>
-                            <Route path="/types" element={<PokeTypes/>} />
+                            <Route path="/types" element={<Types/>}>
+                                <Route path=":typeid" element={<PokeType/>}/>
+                            </Route>
                         </Route>
                     </Routes>
                 </BrowserRouter>

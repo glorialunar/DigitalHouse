@@ -6,7 +6,6 @@ function Home() {
         <>
             <HomeContainer>
                 <h1 className="title">Bienvenido a Digital Poke House</h1>
-                <p></p>
                 <Outlet/>     
             </HomeContainer>
         </>

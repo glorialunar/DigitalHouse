@@ -1,15 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 import styles from 'styled-components';
 
-function PokeTypes() {
+function Types() {
     const url = "https://pokeapi.co/api/v2/type/";
     const [pokeTypes, setPokeTypes] = useState([]);
 
     useEffect(() => {
         axios.get(url)
             .then(res => {
-                console.log(res.data.results);
+                console.log(res.data);
                 setPokeTypes(res.data.results);
             })
     }, [url]);
@@ -17,17 +18,22 @@ function PokeTypes() {
     return (
         <>
             <h2 className="title">Tipos de Pokemones</h2>
+            
             <TypesContainer>
                 {pokeTypes.map((item, index) => (
-                    <li key={index}>{item.name}</li>
+                    <Link to={`${index<18 ? index+1 : index+9983}`} key={index}>
+                        {item.name}
+                    </Link>
                 ))}
             </TypesContainer>
+            
+            <Outlet/>
         
         </>
     )
 }
 
-export default PokeTypes;
+export default Types;
 
 const TypesContainer = styles.div`
     display: grid;
