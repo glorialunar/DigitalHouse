@@ -38,7 +38,7 @@ const PokemonsContainer = styles.div`
 
     a:hover{
         font-size: 1.2rem;
-        background: #FEF5AC;
-        color: #97D2EC;
+        background: #FFEEB0;
+        color: #419EAE;
     }
 `

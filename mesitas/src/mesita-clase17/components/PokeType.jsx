@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from 'styled-components';
@@ -12,7 +11,7 @@ function PokeType() {
     useEffect(() => {
         typeId(id)
             .then(res => {
-                console.log(res.data);
+                // console.log(res.data);
                 setPokeType(res.data.pokemon);
             })
     }, [id]);

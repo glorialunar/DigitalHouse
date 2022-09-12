@@ -21,7 +21,7 @@ const NavBarContainer = styles.div`
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    background: #25316D;
+    background: #419EAE;
 
     a{
         font-size: 1.2rem;
