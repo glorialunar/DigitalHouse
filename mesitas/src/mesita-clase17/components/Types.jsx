@@ -1,19 +1,17 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from 'styled-components';
+import { types } from "../ApiService";
 
 function Types() {
-    const url = "https://pokeapi.co/api/v2/type/";
     const [pokeTypes, setPokeTypes] = useState([]);
 
     useEffect(() => {
-        axios.get(url)
+        types()
             .then(res => {
-                console.log(res.data);
                 setPokeTypes(res.data.results);
             })
-    }, [url]);
+    }, []);
 
     return (
         <>
