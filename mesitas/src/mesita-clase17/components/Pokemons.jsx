@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import '../styles.css';
+import styles from 'styled-components';
 
 function Pokemons() {
     const url = "https://pokeapi.co/api/v2/pokemon?limit=50&offset=0";
@@ -17,14 +17,20 @@ function Pokemons() {
 
     return (
         <>
-            <div className='select-poke'>
+            <PokemonsContainer>
                 {pokemones.map((item, index) => (
                     <Link to={`${item.name}`} key={index}>{item.name}</Link>
                 ))}
-            </div>
+            </PokemonsContainer>
             <Outlet/> 
         </>
     )
 }
 
 export default Pokemons;
+
+const PokemonsContainer = styles.div`
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+`

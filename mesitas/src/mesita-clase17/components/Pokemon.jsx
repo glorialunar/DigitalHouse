@@ -17,8 +17,7 @@ function Pokemon() {
 
     return (
         <> 
-            <h2>{params.pokeName}</h2>
-            <img src={poke.sprites.front_default} alt={poke.name}/>
+            <h2>{poke.name}</h2>
         </>
     )
 }

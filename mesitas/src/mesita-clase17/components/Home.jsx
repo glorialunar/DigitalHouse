@@ -1,30 +1,22 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import styles from 'styled-components';
 
 function Home() {
-    const urlPokemons = "https://pokeapi.co/api/v2/pokemon?limit=150";
-    // const [loading, setLoading] = useState(false);
-    const [pokemons, setPokemons] = useState([]);
-
-    useEffect(() => {
-        axios(urlPokemons)
-            .then(res => {
-                // setLoading(true);
-                setPokemons(res.data.results);
-            })
-            .catch(err => {
-                // setLoading(false);
-                alert(err.message);
-            })
-    }, []);
-
     return (
         <>
-            <h1>Bienvenido a Digital Poke House</h1> 
-            <Outlet/>     
+            <HomeContainer>
+                <h1 className="title">Bienvenido a Digital Poke House</h1>
+                <p></p>
+                <Outlet/>     
+            </HomeContainer>
         </>
     )
 }
 
 export default Home;
+
+const HomeContainer = styles.div`
+    .title{
+        text-align: center;
+    }
+`
