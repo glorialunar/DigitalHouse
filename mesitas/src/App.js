@@ -10,7 +10,9 @@
 // import Mesita15 from './mesita-clase15/MesaClase15';
 // import Clase17A from './react-router-dom/Clase17A';
 // import Clase16 from "./mesita-clase16/Clase16";
-import Clase17 from "./mesita-clase17-18/Clase17";
+// import Clase17 from "./mesita-clase17-18/Clase17";
+
+import Clase19 from "./mesita-clase19/Clase19";
 
 function App() {
   return (
@@ -27,7 +29,8 @@ function App() {
       {/* <Mesita15/> */}
       {/* <Clase17A/> */}
       {/* <Clase16/> */}
-      <Clase17/>
+      {/* <Clase17/> */}
+      <Clase19/>
     </>
   );
 }
