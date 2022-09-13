@@ -33,11 +33,11 @@ const PokemonsContainer = styles.div`
     justify-content: space-evenly;
 
     a{
-        padding: 0.5rem;
+        padding: 0.2rem;
     }
 
     a:hover{
-        font-size: 1.2rem;
+        
         background: #FFEEB0;
         color: #419EAE;
     }
