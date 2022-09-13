@@ -10,7 +10,7 @@
 // import Mesita15 from './mesita-clase15/MesaClase15';
 // import Clase17A from './react-router-dom/Clase17A';
 // import Clase16 from "./mesita-clase16/Clase16";
-import Clase17 from "./mesita-clase17/Clase17";
+import Clase17 from "./mesita-clase17-18/Clase17";
 
 function App() {
   return (
